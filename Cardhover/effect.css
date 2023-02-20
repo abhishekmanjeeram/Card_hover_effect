@@ -1,0 +1,75 @@
+body
+{
+    background-color: rgb(113, 0, 174);
+}
+.heading
+{
+    display: flex;
+    justify-content: center;
+}
+.heading h1
+{
+    color: white;
+    font-size: 30px;
+}
+hr
+{
+    width: 50%;
+}
+.box
+{
+    background-color: rgb(113, 0, 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box1,.box2
+{
+    background-color: rgba(42, 77, 165, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    -webkit-transform: perspective(900px);
+    -webkit-transform-style: preserve-3d;
+}
+       
+.card1,.card2,.card3,.card4,.card5,.card6
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.178),rgba(120, 120, 120, 0.277));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+    animation: animate 1s linear infinite;
+    transition:.6s;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.card1 img,.card2 img,.card3 img,.card4 img,.card5 img,.card6 img
+{
+    transform: translateY(15px);
+    margin-bottom: 10px;
+    height: 140px;
+    width: auto;
+}
+.card1 h3,.card2 h3,.card3 h3,.card4 h3,.card5 h3,.card6 h3
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.card1:hover,.card2:hover,.card3:hover,.card4:hover,.card5:hover,.card6:hover
+{     
+    transform: rotatex(0deg);
+    transition:.6s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
